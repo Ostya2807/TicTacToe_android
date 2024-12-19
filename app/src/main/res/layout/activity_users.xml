@@ -8,10 +8,10 @@
     tools:context=".UsersActivity">
 
     <EditText
-        android:id="@+id/editTextText"
+        android:id="@+id/editTextText1"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="text"
         android:text="Player1"
@@ -20,22 +20,21 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="@+id/guideline" />
 
     <EditText
         android:id="@+id/editTextText2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="216dp"
+        android:layout_marginTop="8dp"
         android:ems="10"
         android:inputType="text"
         android:text="Player2"
         android:textSize="24sp"
         app:barrierMargin="16dp"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/editTextText" />
+        app:layout_constraintTop_toBottomOf="@+id/editTextText1" />
 
     <Button
         android:id="@+id/button2"
@@ -43,6 +42,7 @@
         android:layout_height="74dp"
         android:layout_marginTop="16dp"
         android:layout_marginBottom="16dp"
+        android:onClick="gameStart"
         android:text="Button"
         android:textSize="24sp"
         app:iconSize="34dp"
@@ -50,5 +50,19 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/editTextText2" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="30dp" />
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guideline2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="445dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
