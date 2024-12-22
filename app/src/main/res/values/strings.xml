@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">TicTacToe</string>
     <string name="start_game">Start Game</string>
-    <string name="welcome">Welcome to TicTacToe</string>
+    <string name="welcome">TicTacToe</string>
+    <string name="please_name">Please enter players name</string>
+    <string name="player1">Player One</string>
+    <string name="player2">Player Two</string>
 </resources>
