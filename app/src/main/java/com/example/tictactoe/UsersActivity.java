@@ -3,6 +3,7 @@ package com.example.tictactoe;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.EditText;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -24,10 +25,10 @@ public class UsersActivity extends AppCompatActivity {
         });
     }
 
-    public void gameStart(View view){
+    public void gameStart(){
         Intent intent = new Intent(this, GameBoard.class);
         intent.putExtra("playerOne", (findViewById(R.id.editTextText1).toString()));
-        intent.putExtra("playerTwo", (findViewById(R.id.editTextText2).toString()));
+        intent.putExtra("playerTwo", (findViewById(R.id.editTextText2)).toString());
         startActivity(intent);
     }
 
