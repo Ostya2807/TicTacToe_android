@@ -2,7 +2,7 @@ package com.example.tictactoe;
 
 import android.content.Intent;
 import android.os.Bundle;
-import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -30,13 +30,13 @@ public class GameBoard extends AppCompatActivity {
         this.playerTwo = i.getStringExtra("playerTwo");
 
         if (this.playerOne != null && this.playerTwo != null) {
-            this.setPlayersName(this.playerOne, this.playerTwo);
+           this.setPlayersName(this.playerOne, this.playerTwo);
         }
     }
 
     private void setPlayersName(String one, String two) {
-        ((EditText) findViewById(R.id.plyerOne)).setText(one);
-        ((EditText) findViewById(R.id.plyerTwo)).setText(two);
+        ((TextView) findViewById(R.id.text_playerOne)).setText(one);
+        ((TextView) findViewById(R.id.text_playerTwo)).setText(two);
     }
 
 

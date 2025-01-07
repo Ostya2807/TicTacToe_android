@@ -3,7 +3,8 @@ package com.example.tictactoe;
 import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
-import android.widget.EditText;
+import android.widget.Button;
+
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
@@ -12,6 +13,8 @@ import androidx.core.view.ViewCompat;
 import androidx.core.view.WindowInsetsCompat;
 
 public class UsersActivity extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -23,9 +26,11 @@ public class UsersActivity extends AppCompatActivity {
             v.setPadding(systemBars.left, systemBars.top, systemBars.right, systemBars.bottom);
             return insets;
         });
+
     }
 
-    public void gameStart(){
+
+    public void addPlayersName(View view){
         Intent intent = new Intent(this, GameBoard.class);
         intent.putExtra("playerOne", (findViewById(R.id.editTextText1).toString()));
         intent.putExtra("playerTwo", (findViewById(R.id.editTextText2)).toString());
